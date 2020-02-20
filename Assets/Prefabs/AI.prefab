@@ -1,0 +1,1055 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2259140381146776212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2259140381146776214}
+  - component: {fileID: 2259140381146776215}
+  - component: {fileID: 7495141751099499871}
+  m_Layer: 0
+  m_Name: AI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2259140381146776214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2259140381146776212}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.62, y: 3.11, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2259140381146776215
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2259140381146776212}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1837694684869931473, guid: 11b45a13a591acf4884b5bb52d278256,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &7495141751099499871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2259140381146776212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d74b5df443f74ba45837ae3c6b0ae9ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Network:
+    Layer1Size: 1
+    Layer2Size: 40
+    Layer3Size: 6
+    BatchSize: 1
+    BatchCounter: 0
+    Step: 1
+    Momentum: 0.800000011920929
+    MaxWeight: 0.2492081495249224
+    MinWeight: -0.24340885462346998
+    Bias1: 0.03070710314350898
+    Bias2: -0.153883659310079
+    Bias1Error: 0
+    Bias2Error: 0
+    BiasMomentum1: 0
+    BiasMomentum2: 0
+    Weights1:
+    - Value: -0.07293355158713492
+      Error: 0
+      Momentum: 0
+    - Value: -0.02596377318452453
+      Error: 0
+      Momentum: 0
+    - Value: -0.06427379422616211
+      Error: 0
+      Momentum: 0
+    - Value: 0.015787764134167666
+      Error: 0
+      Momentum: 0
+    - Value: 0.021074209613587337
+      Error: 0
+      Momentum: 0
+    - Value: 0.03200192824007402
+      Error: 0
+      Momentum: 0
+    - Value: 0.018218608698916224
+      Error: 0
+      Momentum: 0
+    - Value: 0.0035992719826891035
+      Error: 0
+      Momentum: 0
+    - Value: -0.0015907173753135148
+      Error: 0
+      Momentum: 0
+    - Value: 0.08112449515466046
+      Error: 0
+      Momentum: 0
+    - Value: -0.0519047727389301
+      Error: 0
+      Momentum: 0
+    - Value: 0.0025957840412703078
+      Error: 0
+      Momentum: 0
+    - Value: -0.013886714100519459
+      Error: 0
+      Momentum: 0
+    - Value: -0.03414645989571544
+      Error: 0
+      Momentum: 0
+    - Value: 0.053603687665457055
+      Error: 0
+      Momentum: 0
+    - Value: 0.05292376087936374
+      Error: 0
+      Momentum: 0
+    - Value: -0.011203949200421627
+      Error: 0
+      Momentum: 0
+    - Value: -0.09371815741149017
+      Error: 0
+      Momentum: 0
+    - Value: 0.17972615272955816
+      Error: 0
+      Momentum: 0
+    - Value: -0.0386340294793602
+      Error: 0
+      Momentum: 0
+    - Value: -0.11420998036775765
+      Error: 0
+      Momentum: 0
+    - Value: 0.20411252188531687
+      Error: 0
+      Momentum: 0
+    - Value: -0.042424573810610516
+      Error: 0
+      Momentum: 0
+    - Value: 0.039170439269454065
+      Error: 0
+      Momentum: 0
+    - Value: 0.19271032452442186
+      Error: 0
+      Momentum: 0
+    - Value: -0.1309535891260811
+      Error: 0
+      Momentum: 0
+    - Value: 0.007387059195185683
+      Error: 0
+      Momentum: 0
+    - Value: -0.1252851550739204
+      Error: 0
+      Momentum: 0
+    - Value: -0.061684441310741696
+      Error: 0
+      Momentum: 0
+    - Value: -0.049998308273105974
+      Error: 0
+      Momentum: 0
+    - Value: 0.09507167607296745
+      Error: 0
+      Momentum: 0
+    - Value: -0.02847937457027347
+      Error: 0
+      Momentum: 0
+    - Value: -0.18782432967844195
+      Error: 0
+      Momentum: 0
+    - Value: -0.14807016071996526
+      Error: 0
+      Momentum: 0
+    - Value: 0.06052036500701845
+      Error: 0
+      Momentum: 0
+    - Value: 0.00008632133941820845
+      Error: 0
+      Momentum: 0
+    - Value: -0.09078736855301855
+      Error: 0
+      Momentum: 0
+    - Value: 0.038526723047145724
+      Error: 0
+      Momentum: 0
+    - Value: -0.07793573035905414
+      Error: 0
+      Momentum: 0
+    - Value: -0.1143246884220172
+      Error: 0
+      Momentum: 0
+    Weights2:
+    - Value: 0.02649801969295009
+      Error: 0
+      Momentum: 0
+    - Value: 0.09863561916444073
+      Error: 0
+      Momentum: 0
+    - Value: 0.017619945468169782
+      Error: 0
+      Momentum: 0
+    - Value: -0.05622540728455078
+      Error: 0
+      Momentum: 0
+    - Value: -0.0677085968323927
+      Error: 0
+      Momentum: 0
+    - Value: 0.03448943385341409
+      Error: 0
+      Momentum: 0
+    - Value: -0.09744232706650034
+      Error: 0
+      Momentum: 0
+    - Value: 0.14444884045624687
+      Error: 0
+      Momentum: 0
+    - Value: 0.06194685147728083
+      Error: 0
+      Momentum: 0
+    - Value: 0.07643901720822721
+      Error: 0
+      Momentum: 0
+    - Value: -0.09087015748786181
+      Error: 0
+      Momentum: 0
+    - Value: -0.04218761211816078
+      Error: 0
+      Momentum: 0
+    - Value: -0.07521822188173058
+      Error: 0
+      Momentum: 0
+    - Value: -0.136723967685359
+      Error: 0
+      Momentum: 0
+    - Value: 0.04903688166933885
+      Error: 0
+      Momentum: 0
+    - Value: 0.12147807020654804
+      Error: 0
+      Momentum: 0
+    - Value: -0.02891777184299179
+      Error: 0
+      Momentum: 0
+    - Value: 0.09568240962935717
+      Error: 0
+      Momentum: 0
+    - Value: -0.03749494981448985
+      Error: 0
+      Momentum: 0
+    - Value: -0.11672084944518217
+      Error: 0
+      Momentum: 0
+    - Value: 0.2492081495249224
+      Error: 0
+      Momentum: 0
+    - Value: 0.021715956694300348
+      Error: 0
+      Momentum: 0
+    - Value: -0.1528640567449978
+      Error: 0
+      Momentum: 0
+    - Value: -0.002042931776767222
+      Error: 0
+      Momentum: 0
+    - Value: -0.019617213701809168
+      Error: 0
+      Momentum: 0
+    - Value: -0.006587971751201826
+      Error: 0
+      Momentum: 0
+    - Value: 0.03941232685898785
+      Error: 0
+      Momentum: 0
+    - Value: 0.003927767140679991
+      Error: 0
+      Momentum: 0
+    - Value: -0.037685893226661694
+      Error: 0
+      Momentum: 0
+    - Value: -0.2124424528772639
+      Error: 0
+      Momentum: 0
+    - Value: -0.054874393429928205
+      Error: 0
+      Momentum: 0
+    - Value: -0.19172534617472128
+      Error: 0
+      Momentum: 0
+    - Value: -0.08617797532659921
+      Error: 0
+      Momentum: 0
+    - Value: -0.036900827216896075
+      Error: 0
+      Momentum: 0
+    - Value: 0.171761617421982
+      Error: 0
+      Momentum: 0
+    - Value: 0.09957349051940652
+      Error: 0
+      Momentum: 0
+    - Value: -0.0031799463577550867
+      Error: 0
+      Momentum: 0
+    - Value: 0.23398198100490133
+      Error: 0
+      Momentum: 0
+    - Value: -0.024283747698078343
+      Error: 0
+      Momentum: 0
+    - Value: -0.009596259209303187
+      Error: 0
+      Momentum: 0
+    - Value: 0.011552978847662241
+      Error: 0
+      Momentum: 0
+    - Value: 0.0958769938667197
+      Error: 0
+      Momentum: 0
+    - Value: -0.05012597980541919
+      Error: 0
+      Momentum: 0
+    - Value: -0.03428213133720458
+      Error: 0
+      Momentum: 0
+    - Value: -0.0030518147425058605
+      Error: 0
+      Momentum: 0
+    - Value: 0.060999786189826856
+      Error: 0
+      Momentum: 0
+    - Value: 0.013123005498020104
+      Error: 0
+      Momentum: 0
+    - Value: 0.07618344558089017
+      Error: 0
+      Momentum: 0
+    - Value: 0.13917799436335732
+      Error: 0
+      Momentum: 0
+    - Value: 0.03840060543158461
+      Error: 0
+      Momentum: 0
+    - Value: 0.18003974910147263
+      Error: 0
+      Momentum: 0
+    - Value: 0.060956497817290234
+      Error: 0
+      Momentum: 0
+    - Value: 0.007853499823953534
+      Error: 0
+      Momentum: 0
+    - Value: -0.026835321862384638
+      Error: 0
+      Momentum: 0
+    - Value: 0.0012015449158245205
+      Error: 0
+      Momentum: 0
+    - Value: 0.09077974674558821
+      Error: 0
+      Momentum: 0
+    - Value: -0.013541435590230098
+      Error: 0
+      Momentum: 0
+    - Value: 0.06423693973690899
+      Error: 0
+      Momentum: 0
+    - Value: -0.02064815608486333
+      Error: 0
+      Momentum: 0
+    - Value: -0.008341192625563298
+      Error: 0
+      Momentum: 0
+    - Value: 0.12207868793316869
+      Error: 0
+      Momentum: 0
+    - Value: 0.041909460734718705
+      Error: 0
+      Momentum: 0
+    - Value: -0.01382129773049039
+      Error: 0
+      Momentum: 0
+    - Value: -0.006129714679430201
+      Error: 0
+      Momentum: 0
+    - Value: -0.007486151699965498
+      Error: 0
+      Momentum: 0
+    - Value: -0.24340885462346998
+      Error: 0
+      Momentum: 0
+    - Value: 0.19326228795074002
+      Error: 0
+      Momentum: 0
+    - Value: -0.057845711514927976
+      Error: 0
+      Momentum: 0
+    - Value: 0.1521123530787889
+      Error: 0
+      Momentum: 0
+    - Value: -0.1645739512641436
+      Error: 0
+      Momentum: 0
+    - Value: -0.13044264479945616
+      Error: 0
+      Momentum: 0
+    - Value: -0.08939784588207615
+      Error: 0
+      Momentum: 0
+    - Value: 0.02140772416821519
+      Error: 0
+      Momentum: 0
+    - Value: -0.14982975312261962
+      Error: 0
+      Momentum: 0
+    - Value: -0.05180055448348983
+      Error: 0
+      Momentum: 0
+    - Value: 0.09255948546096454
+      Error: 0
+      Momentum: 0
+    - Value: 0.026499157588378227
+      Error: 0
+      Momentum: 0
+    - Value: -0.11719242232843041
+      Error: 0
+      Momentum: 0
+    - Value: -0.0907777501943409
+      Error: 0
+      Momentum: 0
+    - Value: 0.11075338400723872
+      Error: 0
+      Momentum: 0
+    - Value: -0.00482841434176194
+      Error: 0
+      Momentum: 0
+    - Value: 0.001138946273465149
+      Error: 0
+      Momentum: 0
+    - Value: -0.004347032999132456
+      Error: 0
+      Momentum: 0
+    - Value: -0.19050671327798632
+      Error: 0
+      Momentum: 0
+    - Value: 0.20390193271269041
+      Error: 0
+      Momentum: 0
+    - Value: 0.15017156260272516
+      Error: 0
+      Momentum: 0
+    - Value: 0.047116119421717916
+      Error: 0
+      Momentum: 0
+    - Value: -0.04615228500455596
+      Error: 0
+      Momentum: 0
+    - Value: 0.10539226675750753
+      Error: 0
+      Momentum: 0
+    - Value: -0.04603445050312388
+      Error: 0
+      Momentum: 0
+    - Value: -0.06987893357370657
+      Error: 0
+      Momentum: 0
+    - Value: 0.01636735484812002
+      Error: 0
+      Momentum: 0
+    - Value: -0.144504016481134
+      Error: 0
+      Momentum: 0
+    - Value: -0.10417989690603097
+      Error: 0
+      Momentum: 0
+    - Value: -0.0028197727204059323
+      Error: 0
+      Momentum: 0
+    - Value: -0.15414629119117076
+      Error: 0
+      Momentum: 0
+    - Value: -0.009802913456931475
+      Error: 0
+      Momentum: 0
+    - Value: 0.08453536819109315
+      Error: 0
+      Momentum: 0
+    - Value: -0.12455827614633927
+      Error: 0
+      Momentum: 0
+    - Value: 0.06132485403720384
+      Error: 0
+      Momentum: 0
+    - Value: 0.047758279541633385
+      Error: 0
+      Momentum: 0
+    - Value: -0.00866590838701706
+      Error: 0
+      Momentum: 0
+    - Value: -0.015646046541774677
+      Error: 0
+      Momentum: 0
+    - Value: 0.09730209048417768
+      Error: 0
+      Momentum: 0
+    - Value: -0.03132994411559523
+      Error: 0
+      Momentum: 0
+    - Value: 0.1520803340672509
+      Error: 0
+      Momentum: 0
+    - Value: 0.016530962328476385
+      Error: 0
+      Momentum: 0
+    - Value: 0.03446772724522809
+      Error: 0
+      Momentum: 0
+    - Value: 0.14709368251527496
+      Error: 0
+      Momentum: 0
+    - Value: 0.08737331237465498
+      Error: 0
+      Momentum: 0
+    - Value: -0.007002941031628773
+      Error: 0
+      Momentum: 0
+    - Value: 0.007939671417446148
+      Error: 0
+      Momentum: 0
+    - Value: 0.0804626790967606
+      Error: 0
+      Momentum: 0
+    - Value: -0.1591548560285092
+      Error: 0
+      Momentum: 0
+    - Value: -0.10248680567829822
+      Error: 0
+      Momentum: 0
+    - Value: 0.009181040212553766
+      Error: 0
+      Momentum: 0
+    - Value: 0.02770894453158723
+      Error: 0
+      Momentum: 0
+    - Value: 0.007992618477104885
+      Error: 0
+      Momentum: 0
+    - Value: 0.20126145656737124
+      Error: 0
+      Momentum: 0
+    - Value: -0.09146149163426232
+      Error: 0
+      Momentum: 0
+    - Value: 0.16453204717945752
+      Error: 0
+      Momentum: 0
+    - Value: 0.0984951209531836
+      Error: 0
+      Momentum: 0
+    - Value: -0.1321838623099935
+      Error: 0
+      Momentum: 0
+    - Value: -0.011888182411096702
+      Error: 0
+      Momentum: 0
+    - Value: 0.03009795704910855
+      Error: 0
+      Momentum: 0
+    - Value: -0.026897285488511957
+      Error: 0
+      Momentum: 0
+    - Value: 0.00967013184956143
+      Error: 0
+      Momentum: 0
+    - Value: 0.045695421946712195
+      Error: 0
+      Momentum: 0
+    - Value: 0.10276776227865542
+      Error: 0
+      Momentum: 0
+    - Value: 0.0834807116661045
+      Error: 0
+      Momentum: 0
+    - Value: -0.11219611734310683
+      Error: 0
+      Momentum: 0
+    - Value: -0.04184908359963827
+      Error: 0
+      Momentum: 0
+    - Value: 0.04075889929889586
+      Error: 0
+      Momentum: 0
+    - Value: 0.07328110090637147
+      Error: 0
+      Momentum: 0
+    - Value: -0.11758701479084248
+      Error: 0
+      Momentum: 0
+    - Value: -0.0945653314898915
+      Error: 0
+      Momentum: 0
+    - Value: -0.0872097595973545
+      Error: 0
+      Momentum: 0
+    - Value: 0.03186148164277323
+      Error: 0
+      Momentum: 0
+    - Value: 0.10451615040699494
+      Error: 0
+      Momentum: 0
+    - Value: 0.18234913305116507
+      Error: 0
+      Momentum: 0
+    - Value: -0.05221394109930963
+      Error: 0
+      Momentum: 0
+    - Value: 0.03379743019184689
+      Error: 0
+      Momentum: 0
+    - Value: -0.07243019161701196
+      Error: 0
+      Momentum: 0
+    - Value: 0.12383328743207256
+      Error: 0
+      Momentum: 0
+    - Value: -0.0750370956420228
+      Error: 0
+      Momentum: 0
+    - Value: -0.09690164941234151
+      Error: 0
+      Momentum: 0
+    - Value: 0.05385869728837108
+      Error: 0
+      Momentum: 0
+    - Value: -0.07681684689096667
+      Error: 0
+      Momentum: 0
+    - Value: 0.04413353594898358
+      Error: 0
+      Momentum: 0
+    - Value: -0.0033666816081713963
+      Error: 0
+      Momentum: 0
+    - Value: 0.023383436646781667
+      Error: 0
+      Momentum: 0
+    - Value: 0.19177686927767876
+      Error: 0
+      Momentum: 0
+    - Value: 0.003902568210523765
+      Error: 0
+      Momentum: 0
+    - Value: 0.03153610612223674
+      Error: 0
+      Momentum: 0
+    - Value: -0.05111723326503436
+      Error: 0
+      Momentum: 0
+    - Value: 0.054371358896057584
+      Error: 0
+      Momentum: 0
+    - Value: 0.1732470894020653
+      Error: 0
+      Momentum: 0
+    - Value: -0.06184849438418973
+      Error: 0
+      Momentum: 0
+    - Value: 0.0748662070724442
+      Error: 0
+      Momentum: 0
+    - Value: 0.13083278019646402
+      Error: 0
+      Momentum: 0
+    - Value: -0.0871783815471318
+      Error: 0
+      Momentum: 0
+    - Value: -0.06978462202066611
+      Error: 0
+      Momentum: 0
+    - Value: 0.100365607041699
+      Error: 0
+      Momentum: 0
+    - Value: 0.24498699157380024
+      Error: 0
+      Momentum: 0
+    - Value: 0.09421689134597992
+      Error: 0
+      Momentum: 0
+    - Value: 0.050290344564991714
+      Error: 0
+      Momentum: 0
+    - Value: 0.06353604441319168
+      Error: 0
+      Momentum: 0
+    - Value: 0.16012967461575317
+      Error: 0
+      Momentum: 0
+    - Value: -0.11343187710580316
+      Error: 0
+      Momentum: 0
+    - Value: -0.13765639422519027
+      Error: 0
+      Momentum: 0
+    - Value: 0.06393629426023599
+      Error: 0
+      Momentum: 0
+    - Value: 0.025858631088406633
+      Error: 0
+      Momentum: 0
+    - Value: 0.05828517298057951
+      Error: 0
+      Momentum: 0
+    - Value: -0.08142832544790558
+      Error: 0
+      Momentum: 0
+    - Value: -0.034261954708480945
+      Error: 0
+      Momentum: 0
+    - Value: 0.027607862555704507
+      Error: 0
+      Momentum: 0
+    - Value: 0.02393325650977692
+      Error: 0
+      Momentum: 0
+    - Value: -0.031215858182387063
+      Error: 0
+      Momentum: 0
+    - Value: 0.07522464545351182
+      Error: 0
+      Momentum: 0
+    - Value: -0.020198562203151305
+      Error: 0
+      Momentum: 0
+    - Value: 0.004134570401198577
+      Error: 0
+      Momentum: 0
+    - Value: 0.09251194592057974
+      Error: 0
+      Momentum: 0
+    - Value: 0.009188956470178646
+      Error: 0
+      Momentum: 0
+    - Value: -0.060090308447010514
+      Error: 0
+      Momentum: 0
+    - Value: -0.18611119555894604
+      Error: 0
+      Momentum: 0
+    - Value: -0.0009228767688583532
+      Error: 0
+      Momentum: 0
+    - Value: 0.0150915065258387
+      Error: 0
+      Momentum: 0
+    - Value: 0.05032181129593094
+      Error: 0
+      Momentum: 0
+    - Value: -0.011252190641100028
+      Error: 0
+      Momentum: 0
+    - Value: -0.16400065742919873
+      Error: 0
+      Momentum: 0
+    - Value: 0.07192468564877458
+      Error: 0
+      Momentum: 0
+    - Value: -0.023488788561710702
+      Error: 0
+      Momentum: 0
+    - Value: 0.10491084851144536
+      Error: 0
+      Momentum: 0
+    - Value: 0.07689545736673035
+      Error: 0
+      Momentum: 0
+    - Value: -0.018309626374763386
+      Error: 0
+      Momentum: 0
+    - Value: 0.13393896976347
+      Error: 0
+      Momentum: 0
+    - Value: -0.058675025217381625
+      Error: 0
+      Momentum: 0
+    - Value: 0.04480444010243568
+      Error: 0
+      Momentum: 0
+    - Value: 0.050719406562784154
+      Error: 0
+      Momentum: 0
+    - Value: 0.19647292139433947
+      Error: 0
+      Momentum: 0
+    - Value: -0.041251556259633435
+      Error: 0
+      Momentum: 0
+    - Value: -0.08279076319348058
+      Error: 0
+      Momentum: 0
+    - Value: -0.14394561321431706
+      Error: 0
+      Momentum: 0
+    - Value: 0.032705089100701946
+      Error: 0
+      Momentum: 0
+    - Value: -0.07584422734341455
+      Error: 0
+      Momentum: 0
+    - Value: 0.03946696709117014
+      Error: 0
+      Momentum: 0
+    - Value: 0.04717389237454916
+      Error: 0
+      Momentum: 0
+    - Value: -0.040988214782223545
+      Error: 0
+      Momentum: 0
+    - Value: -0.10789228632175486
+      Error: 0
+      Momentum: 0
+    - Value: -0.09239490640735402
+      Error: 0
+      Momentum: 0
+    - Value: 0.010466493748378727
+      Error: 0
+      Momentum: 0
+    - Value: -0.023425299937508113
+      Error: 0
+      Momentum: 0
+    - Value: 0.01758584700062953
+      Error: 0
+      Momentum: 0
+    - Value: 0.08579252973935025
+      Error: 0
+      Momentum: 0
+    - Value: 0.07979310178104355
+      Error: 0
+      Momentum: 0
+    - Value: -0.04451835692645638
+      Error: 0
+      Momentum: 0
+    - Value: -0.09651341432562437
+      Error: 0
+      Momentum: 0
+    - Value: -0.012011946170916133
+      Error: 0
+      Momentum: 0
+    - Value: -0.004143030725345984
+      Error: 0
+      Momentum: 0
+    - Value: -0.07595046355611032
+      Error: 0
+      Momentum: 0
+    - Value: 0.03511738547913455
+      Error: 0
+      Momentum: 0
+    - Value: -0.07827441790681379
+      Error: 0
+      Momentum: 0
+    - Value: 0.03379299122949514
+      Error: 0
+      Momentum: 0
+    - Value: -0.2040274695770269
+      Error: 0
+      Momentum: 0
+    - Value: 0.019949081925965912
+      Error: 0
+      Momentum: 0
+    - Value: -0.08425378912203439
+      Error: 0
+      Momentum: 0
+    - Value: 0.06734632169950053
+      Error: 0
+      Momentum: 0
+    - Value: -0.09793145012141635
+      Error: 0
+      Momentum: 0
+    - Value: 0.11565732154691778
+      Error: 0
+      Momentum: 0
+    - Value: 0.1047202794850994
+      Error: 0
+      Momentum: 0
+    - Value: 0.009529576459672128
+      Error: 0
+      Momentum: 0
+    - Value: 0.009628599446303626
+      Error: 0
+      Momentum: 0
+    - Value: 0.025011705301249933
+      Error: 0
+      Momentum: 0
+    - Value: 0.026819338275881083
+      Error: 0
+      Momentum: 0
+    - Value: -0.057259223594139264
+      Error: 0
+      Momentum: 0
+    - Value: 0.025094337204982105
+      Error: 0
+      Momentum: 0
+    - Value: -0.010693819250515468
+      Error: 0
+      Momentum: 0
+    - Value: -0.13743818945299946
+      Error: 0
+      Momentum: 0
+    - Value: -0.08588154387900977
+      Error: 0
+      Momentum: 0
+    - Value: -0.03923154140716869
+      Error: 0
+      Momentum: 0
+    Neurons1:
+    - Value: 0
+      Gradient: 0
+    Neurons2:
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    Neurons3:
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+    - Value: 0
+      Gradient: 0
+  Hunger: 100
+  Dead: 0
+  _shouldFeed: 0
